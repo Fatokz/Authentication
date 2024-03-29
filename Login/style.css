@@ -111,12 +111,19 @@ body {
 }
 
 #forgot{
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
 }
 
 #forgot a{
     text-decoration: none;
     font-size: 14px;
+    color: blue;
+}
+
+#signs a{
+    text-decoration: none;
+    font-size: 14px;
+    color: blue;
 }
 
 #press{
@@ -125,7 +132,7 @@ body {
     width: fit-content;
 }
 
-#press button {
+#press input {
     padding: 10px 90px 10px 90px;
     cursor: pointer;
     border: none;
@@ -137,6 +144,23 @@ body {
     margin-bottom: 25px;
 }
 
+#divider {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+#divider::before,
+#divider::after {
+    flex: 0.5;
+    content: '';
+    padding: 0.1px;
+    background-color: gray;
+    margin: 15px;
+}
+
 #icons{
     font-size: 30px;
     text-align: center;
@@ -145,6 +169,7 @@ body {
 #icons i{
     padding: 0 15px 0 0 ;
     cursor: pointer;
+    color: gray;
 }
 
 #git:hover{
@@ -156,11 +181,11 @@ body {
 }
 
 #twitter:hover{
-    color: blue;
+    color: black;
 }
 
 #instagram:hover{
-    color: #e1305c;
+    color: #cd0b45;
 }
 
 #linkedin:hover{
@@ -168,5 +193,5 @@ body {
 }
 
 #tiktok:hover{
-    color: #ff0050;
+    color: #890c31;
 }
