@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,800;1,100;1,200;1,300;1,400;1,500;1,600&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    background: rgb(226, 237, 248);
+}
+
+#main {
+    display: flex;
+    justify-content: center;
+    margin-block: 2em;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    /* filter: drop-shadow(0 0 0.9rem black); */
+}
+
+#sign-up {
+    height: 30em;
+    width: 25em;
+    border: 1px solid black;
+    border-right: none;
+    background-color: aliceblue;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px 0 0 15px;
+    padding: 20px;
+}
+
+#image {
+    height: 32.5em;
+    width: 25em;
+    border: 1px solid black;
+    /* padding: 0 0 0 0; */
+    border-left: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0 15px 15px 0;
+}
+
+#image img {
+    height: 32.5em;
+    width: 25em;
+    border-radius: 0 15px 15px 0;
+    filter: none;
+}
+
+#sign {
+    font-size: 25px;
+    line-height: 35px;
+}
+
+#sign p {
+    font-size: 18px;
+}
+
+#vl {
+    margin-top: 10px;
+    background-color: black;
+    height: 0.6px;
+}
+
+#inputs {
+    display: flex;
+    margin: 30px 0 30px 0;
+    height: 2.5em;
+    width: 94.3%;
+    border: 1.5px solid gray;
+    /* background-color: black; */
+    border-radius: 5px;
+}
+
+#username button {
+    padding: 8.6px;
+    width: 2em;
+    font-size: 20px;
+    outline: none;
+    background: rgba(25, 23, 23, 0.146);
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+#text input {
+    border-radius: none;
+    height: 2.9em;
+    padding-left: 12px;
+    width: 24.1em;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 13.5px;
+    border-radius: 0 5px 5px 0;
+}
+
+#texts input {
+    border-radius: none;
+    height: 2.9em;
+    padding-left: 12px;
+    width: 22em;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 13.5px;
+    border-radius: 0 5px 5px 0;
+}
+
+#texts span i {
+    cursor: pointer;
+}
+
+#forgot{
+    margin: 0 0 20px 0;
+}
+
+#forgot a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#press{
+    margin-inline: auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+#press button {
+    padding: 10px 90px 10px 90px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+#icons{
+    font-size: 30px;
+    text-align: center;
+}
+
+#icons i{
+    padding: 0 15px 0 0 ;
+    cursor: pointer;
+}
+
+#git:hover{
+    color: #000000;
+}
+
+#facebook:hover{
+    color: #3b5998;
+}
+
+#twitter:hover{
+    color: blue;
+}
+
+#instagram:hover{
+    color: #e1305c;
+}
+
+#linkedin:hover{
+    color: blue;
+}
+
+#tiktok:hover{
+    color: blue;
+}
