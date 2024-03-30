@@ -22,7 +22,7 @@
                         <button><i class="fa-solid fa-user"></i></button>
                     </div>
                     <div id="text">
-                        <input type="text" placeholder="Username" required>
+                        <input id="username1" type="text" placeholder="Username" required>
                     </div>
                 </div>
                 <div id="inputs">
@@ -30,7 +30,7 @@
                         <button><i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                     <div id="text">
-                        <input type="email" placeholder="Email Address" required>
+                        <input id="email" type="email" placeholder="Email Address" required>
                     </div>
                 </div>
                 <div id="inputs">
@@ -38,8 +38,8 @@
                         <button><i class="fa-solid fa-lock"></i></button>
                     </div>
                     <div id="texts">
-                        <input type="password" placeholder="Password" id="password" required>
-                        <span onclick="show()" id="open"><i class="fa-solid fa-eye-slash" ></i></span>
+                        <input type="password" id="password1" placeholder="Password" id="password" required>
+                        <span id="eye" onclick="show()"><i class="fa-solid fa-eye-slash" id="hide"></i></span>
                     </div>
                 </div>
                 <div id="inputs">
@@ -47,8 +47,8 @@
                         <button><i class="fa-solid fa-square-check"></i></button>
                     </div>
                     <div id="texts">
-                        <input type="password" placeholder="Confirm password" id="password" required>
-                        <span  onclick="show()" id="hide"><i class="fa-solid fa-eye-slash" ></i></span>
+                        <input type="password" id="password2" placeholder="Confirm password" id="password" required>
+                        <span id="eyes" onclick="shows()" ><i class="fa-solid fa-eye-slash" id="hide"></i></span>
                     </div>
                 </div>
                 <div id="have">
@@ -56,20 +56,35 @@
                 </div>
                 <div id="check">
                     <div>
-                        <input name="box" type="checkbox">
+                        <input name="box" id="checkbox" type="checkbox">
                     </div>
                     <div id="terms">
                         <span>I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a></span>
                     </div>
                 </div>
                 <div id="press">
-                    <input type="submit" value="Sign Up"></input>
+                    <input type="button" onclick="signUp()" value="Sign Up"></input>
                 </div>
             </div>
             <div id="image">
                 <img src="sign-up.jpg" alt="">
             </div>
         </div>
+       <section id="one">
+        <div id="center">
+            <table>
+                <thead>
+                    <th>Username</th>
+                    <th>E-mail</th>
+                    <th>Confirm password</th>
+                    <th>Checked</th>
+                </thead>
+                <tbody id="table">
+
+                </tbody>
+            </table>
+        </div>
+       </section>
     </main>
 </body>
 

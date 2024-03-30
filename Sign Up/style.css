@@ -140,8 +140,14 @@ body {
     color: blue;
 }
 
+#press{
+    width: fit-content;
+    height: fit-content;
+    margin-inline: auto;
+}
+
 #press input{
-    padding: 10px 15px 10px 15px;
+    padding: 10px 120px 10px 120px;
     cursor: pointer;
     border: none;
     background-color: black;
@@ -149,4 +155,30 @@ body {
     border-radius: 5px;
     font-family: "Raleway", sans-serif;
     font-size: 15px;
+}
+
+/* #press:hover input{
+    background-color: aliceblue;
+    color: black;
+} */
+
+#one{
+    height: 40vh;
+}
+
+#center{
+    height: fit-content;
+    width: 100%;
+    /* background-color: red; */
+    margin: auto;
+}
+
+table, th, tbody, td, tr{
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    width: 300px;
+    /* background-color: red; */
 }
