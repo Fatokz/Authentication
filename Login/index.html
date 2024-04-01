@@ -12,49 +12,51 @@
 <body>
     <main>
         <div id="main">
-            <div id="login">
-                <div id="sign">
-                    <h3>Login</h3>
-                    <p>Login to your account!</p>
-                </div>
-                <div id="vl"></div>
-                <div id="inputs">
-                    <div id="username">
-                        <button><i class="fa-solid fa-user"></i></button>
+            <form action="#">
+                <div id="login">
+                    <div id="sign">
+                        <h3>Login</h3>
+                        <p>Login to your account!</p>
                     </div>
-                    <div id="text">
-                        <input id="user" type="text" placeholder="E-mail" required>
+                    <div id="vl"></div>
+                    <div id="inputs">
+                        <div id="username">
+                            <button><i class="fa-solid fa-user"></i></button>
+                        </div>
+                        <div id="text">
+                            <input id="user" type="text" placeholder="E-mail" required>
+                        </div>
+                    </div>
+                    <div id="inputs">
+                        <div id="username">
+                            <button><i class="fa-solid fa-lock"></i></button>
+                        </div>
+                        <div id="texts">
+                            <input type="password" id="key" placeholder="Password" id="password" required>
+                            <span id="eye" onclick="show()" id="open"><i class="fa-solid fa-eye-slash"></i></span>
+                        </div>
+                    </div>
+                    <div id="forgot">
+                        <p><a href="#">Forgot your password?</a></p>
+                    </div>
+                    <div id="divider">
+                        <div id="signs">
+                            <p><a href="../Sign Up/index.html">Sign Up</a></p>
+                        </div>
+                    </div>
+                    <div id="press">
+                        <input onclick="login()" type="button" value="Login"></input>
+                    </div>
+                    <div id="icons">
+                        <i class="fa-brands fa-github" id="git"></i>
+                        <i class="fa-brands fa-facebook" id="facebook"></i>
+                        <i class="fa-brands fa-x-twitter" id="twitter"></i>
+                        <i class="fa-brands fa-instagram" id="instagram"></i>
+                        <i class="fa-brands fa-linkedin" id="linkedin"></i>
+                        <i class="fa-brands fa-tiktok" id="tiktok"></i>
                     </div>
                 </div>
-                <div id="inputs">
-                    <div id="username">
-                        <button><i class="fa-solid fa-lock"></i></button>
-                    </div>
-                    <div id="texts">
-                        <input type="password" id="key" placeholder="Password" id="password" required>
-                        <span id="eye" onclick="show()" id="open"><i class="fa-solid fa-eye-slash"></i></span>
-                    </div>
-                </div>
-                <div id="forgot">
-                    <p><a href="#">Forgot your password?</a></p>
-                </div>
-                <div id="divider">
-                    <div id="signs">
-                        <p><a href="../Sign Up/index.html">Sign Up</a></p>
-                    </div>
-                </div>
-                <div id="press">
-                    <input onclick="login()" type="button" value="Login"></input>
-                </div>
-                <div id="icons">
-                    <i class="fa-brands fa-github" id="git"></i>
-                    <i class="fa-brands fa-facebook" id="facebook"></i>
-                    <i class="fa-brands fa-x-twitter" id="twitter"></i>
-                    <i class="fa-brands fa-instagram" id="instagram"></i>
-                    <i class="fa-brands fa-linkedin" id="linkedin"></i>
-                    <i class="fa-brands fa-tiktok" id="tiktok"></i>
-                </div>
-            </div>
+            </form>
             <div id="image">
                 <img src="../Image/login.jpg" alt="">
             </div>
