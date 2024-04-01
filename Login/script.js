@@ -13,7 +13,7 @@ function login() {
     if (user.value == "" || password.value == "") {
         alert("Please fill out both email and password fields or sign up if you haven't already.")
     }
-    else if (logIn) { 
+    else if (logIn) {
         alert(`Login successful ${user.value}`)
     }
     else {
