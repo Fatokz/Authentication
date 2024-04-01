@@ -1,11 +1,14 @@
-let username = document.getElementById("username1")
-let email = document.getElementById("email")
-let password1 = document.getElementById("password1")
-let password2 = document.getElementById("password2")
-let checker = document.getElementById("checkbox")
-let eye = document.getElementById("eye")
-let eyes = document.getElementById("eyes")
-let table = document.getElementById("table")
+let username = document.getElementById("username1");
+let email = document.getElementById("email");
+let password1 = document.getElementById("password1");
+let password2 = document.getElementById("password2");
+let checker = document.getElementById("checkbox");
+let eye = document.getElementById("eye");
+let eyes = document.getElementById("eyes");
+let table = document.getElementById("table");
+let sub = document.getElementById("submit");
+
+// sub.setAttribute("disabled", true);
 table.innerHTML = ''
 let datas = []
 
@@ -27,23 +30,24 @@ function signUp() {
             password: password2.value,
             terms: checker.checked
         }
+        // sub.removeAttribute("disabled");
 
         const existuser = datas.find(user => user.email == email.value);
         console.log(existuser);
-        
 
         if (existuser) {
             alert("E-mail already exist")
         } else {
             datas.push(UserDataObj)
             localStorage.setItem("userdetails", JSON.stringify(datas))
-            alert(`sign up successful ${username.value}`)
+            alert(`Signup successful.  ${username.value}  Please login.`)
             console.log(datas);
         }
 
         // datas.push(UserDataObj)
         // alert(`sign up successful ${username.value}`)
         // console.log(datas);
+
 
 
         displayTable()

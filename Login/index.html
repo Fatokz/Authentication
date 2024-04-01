@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Image/verify.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
@@ -11,7 +12,7 @@
 <body>
     <main>
         <div id="main">
-            <div id="sign-up">
+            <div id="login">
                 <div id="sign">
                     <h3>Login</h3>
                     <p>Login to your account!</p>
@@ -22,9 +23,7 @@
                         <button><i class="fa-solid fa-user"></i></button>
                     </div>
                     <div id="text">
-                        <form action="">
-                            <input type="text" placeholder="Username / E-mail" required>
-                        </form>
+                        <input id="user" type="text" placeholder="E-mail" required>
                     </div>
                 </div>
                 <div id="inputs">
@@ -32,10 +31,8 @@
                         <button><i class="fa-solid fa-lock"></i></button>
                     </div>
                     <div id="texts">
-                        <form action="">
-                            <input type="password" placeholder="Password" id="password" required >
-                            <span onclick="show()" id="open"><i class="fa-solid fa-eye-slash"></i></span>
-                        </form>
+                        <input type="password" id="key" placeholder="Password" id="password" required>
+                        <span id="eye" onclick="show()" id="open"><i class="fa-solid fa-eye-slash"></i></span>
                     </div>
                 </div>
                 <div id="forgot">
@@ -47,7 +44,7 @@
                     </div>
                 </div>
                 <div id="press">
-                    <input type="submit" value="Login"></input>
+                    <input onclick="login()" type="button" value="Login"></input>
                 </div>
                 <div id="icons">
                     <i class="fa-brands fa-github" id="git"></i>
@@ -59,7 +56,7 @@
                 </div>
             </div>
             <div id="image">
-                <img src="login.jpg" alt="">
+                <img src="../Image/login.jpg" alt="">
             </div>
         </div>
     </main>
