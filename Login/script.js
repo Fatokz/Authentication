@@ -3,7 +3,7 @@ let password = document.getElementById("key")
 let eye = document.getElementById("eye");
 let userdetails = JSON.parse(localStorage.getItem("userdetails"))
 console.log(userdetails);
-// console.log(userdetails.password);
+
 
 function login() {
     console.log(user.value);
@@ -24,8 +24,9 @@ function login() {
         password: password.value
     }
     console.log(details);
-    // let logIn = userdetails.find(userdetails => userdetails.email == user.value && userdetails.password == password.value)
-    // console.log(logIn);
+
+    user.value = ''
+    password.value = ''
 }
 
 eye.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
