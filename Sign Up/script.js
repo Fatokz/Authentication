@@ -10,7 +10,7 @@ let sub = document.getElementById("submit");
 
 // sub.setAttribute("disabled", true);
 table.innerHTML = ''
-let datas = []
+let datas = [] && JSON.parse(localStorage.getItem("userdetails"))
 
 function signUp() {
     if (username.value == '' || email.value == '' || password1.value == '' || password2.value == '') {
