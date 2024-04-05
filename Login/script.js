@@ -2,6 +2,7 @@ let user = document.getElementById("user")
 let password = document.getElementById("key")
 let eye = document.getElementById("eye");
 let userdetails = JSON.parse(localStorage.getItem("userdetails"))
+
 console.log(userdetails);
 
 
@@ -15,6 +16,8 @@ function login() {
     }
     else if (logIn) {
         alert(`Login successful ${user.value}`)
+        localStorage.setItem("userFound", JSON.stringify(logIn))
+        window.location.href = "dashboard.html"
     }
     else {
         alert("Account not registered")

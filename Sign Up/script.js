@@ -10,8 +10,8 @@ let sub = document.getElementById("submit");
 
 // sub.setAttribute("disabled", true);
 table.innerHTML = ''
-let datas = [] && JSON.parse(localStorage.getItem("userdetails"))
-
+let datas =  JSON.parse(localStorage.getItem("userdetails")) || []
+console.log(datas);
 function signUp() {
     if (username.value == '' || email.value == '' || password1.value == '' || password2.value == '') {
         alert('All fields are mandatory')
@@ -41,6 +41,7 @@ function signUp() {
             datas.push(UserDataObj)
             localStorage.setItem("userdetails", JSON.stringify(datas))
             alert(`Signup successful.  ${username.value}  Please login.`)
+            window.location.href = "../../../index.html"
             console.log(datas);
         }
 
