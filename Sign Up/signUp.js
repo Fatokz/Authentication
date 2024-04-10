@@ -10,6 +10,7 @@ let sub = document.getElementById("submit");
 
 // sub.setAttribute("disabled", true);
 table.innerHTML = ''
+
 let datas =  JSON.parse(localStorage.getItem("userdetails")) || []
 console.log(datas);
 function signUp() {
@@ -41,7 +42,7 @@ function signUp() {
             datas.push(UserDataObj)
             localStorage.setItem("userdetails", JSON.stringify(datas))
             alert(`Signup successful.  ${username.value}  Please login.`)
-            window.location.href = "../../../index.html"
+            window.location.href = "../Login/login.html"
             console.log(datas);
         }
 
@@ -54,7 +55,7 @@ function signUp() {
         displayTable()
 
 
-
+        
         username.value = ''
         email.value = ''
         password1.value = ''

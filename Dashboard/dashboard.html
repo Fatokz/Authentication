@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div id="flex">
+                <div>
+                    <h1>Welcome <span id="users"></span></h1>
+                </div>
+                <div>
+                    <button>About</button>
+                    <button>Services</button>
+                    <button>Contact</button>
+                </div>
+                <div>
+                    <button onclick="logOut()">Log out</button>
+                </div>
+            </div>
+        </nav>
+        <section id="one">
+            <div id="disp">
+                <div id="btn">
+                    <button onclick="make()">Make a post</button>
+                </div>
+                <div id="btn">
+                    <button  onclick="allPost()">All post</button>
+                </div>
+                <div id="btn">
+                    <button onclick="liked()">Liked post</button>
+                </div>
+            </div>
+
+            <div id="post">
+                <div id="make">
+                    <h1>Post a blog</h1>
+                    <span> Topic:</span><input id="title" type="text">
+                    <input id="readFile" type="file" accept="png"><br><br>
+                    <textarea name="" id="textArea" cols="30" rows="10" placeholder="About post "></textarea>
+                    <button id="myPost">post</button>
+                    <div id="review">
+                        <img id="image" alt="">
+                    </div>
+                </div>
+
+                <div id="allpost">
+                    <div id="dpost">
+
+                    </div>
+                </div>
+
+                <div id="like">
+                    <h3>Remijfjfjfjhhhjd</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
+<script src="dashboard.js"></script>

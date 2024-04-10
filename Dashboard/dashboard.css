@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+#users{
+    color: aliceblue;
+}
+
+nav{
+    padding: 20px;
+    height: 40px;
+    background-color: rebeccapurple;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#flex{
+    display: flex;
+    justify-content: space-between;
+}  
+
+#post{
+    /* padding: 0 20px 20px 20px; */
+    height: 24em;
+    width: 55%;
+    background-color: rebeccapurple;
+    position: relative;
+    margin-inline: auto;
+    margin-block: 40px;
+}
+
+#make{
+    padding: 0 20px 20px 20px;
+    position: absolute;
+}
+
+#disp{
+    display: flex;
+    justify-content: space-around;
+}
+
+#image {
+    height: 100px;
+    width: 100px;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#allpost{
+    display: none;
+}
+#like{
+    display: none;
+}

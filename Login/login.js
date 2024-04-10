@@ -15,13 +15,13 @@ function login() {
         alert("Please fill out both email and password fields or sign up if you haven't already.")
     }
     else if (logIn) {
-        alert(`Login successful ${user.value}`)
+        alert(`Login successful ${logIn.username}`)
         localStorage.setItem("userFound", JSON.stringify(logIn))
-        window.location.href = "dashboard.html"
+        window.location.href = "../Dashboard/dashboard.html"
     }
     else {
         alert("Account not registered")
-    }
+    }       
     let details = {
         email: user.value,
         password: password.value
