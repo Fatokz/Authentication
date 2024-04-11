@@ -9,6 +9,7 @@ let makes = document.getElementById("make")
 let allpost = document.getElementById("allpost");
 let dpost = document.getElementById("dpost");
 let like = document.getElementById("like");
+let likeBtn = document.getElementById("likk");
 
 allpost.style.display = "none"
 like.style.display = "none"
@@ -32,7 +33,7 @@ else {
 
 function logOut() {
     localStorage.removeItem("userFound")
-    window.location.href = "../Login/login.html"
+    window.location.href = "../Login/index.html"
 }
 
 readFile.addEventListener("change", function (event) {
@@ -66,6 +67,7 @@ myPost.addEventListener("click", function () {
     blogPosts.push(data)
     console.log(blogPosts);
     localStorage.setItem("myBlog", JSON.stringify(blogPosts))
+    alert("blog posted successfully")
 })
 
 function make() {
@@ -89,10 +91,19 @@ function liked() {
 for (let index = 0; index < blogPosts.length; index++) {
     const blogs = blogPosts[index];
     dpost.innerHTML +=
-        `<div>
+        `<div id = "blogPost">
+     <h1>${blogs.user}</h1>
      <h1>${blogs.topic}</h1>
+     <h1>${blogs.comment}</h1>
+     <h1>${blogs.date}</h1>
      <img src=${blogs.image} /> 
-
+     <button id="likk" onclick="dlike(event)">like</button>
     </div>`
 
+}
+
+function dlike(event) {
+    likk.innerHTML == "like" ? likk.innerHTML = "liked" : likk.innerHTML = "like";
+    console.log(likk.innerHTML);
+    console.log(event.target);
 }

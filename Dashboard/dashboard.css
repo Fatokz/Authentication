@@ -28,11 +28,17 @@ nav{
 #post{
     /* padding: 0 20px 20px 20px; */
     height: 24em;
-    width: 55%;
+    width: 25em;
     background-color: rebeccapurple;
     position: relative;
     margin-inline: auto;
     margin-block: 40px;
+    overflow-y: scroll;
+    border-radius: 20px;
+}
+
+#post::-webkit-scrollbar{
+    display: none;
 }
 
 #make{
@@ -55,6 +61,12 @@ nav{
 #allpost{
     display: none;
 }
+
 #like{
     display: none;
+}
+
+#blogPost img{
+    height: 150px;
+    width: 150px;
 }
