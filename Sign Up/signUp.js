@@ -42,7 +42,7 @@ function signUp() {
             datas.push(UserDataObj)
             localStorage.setItem("userdetails", JSON.stringify(datas))
             alert(`Signup successful.  ${username.value}  Please login.`)
-            window.location.href = "../Login/login.html"
+            window.location.href = "../Login/index.html"
             console.log(datas);
         }
 

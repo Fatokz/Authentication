@@ -133,7 +133,7 @@ body {
     width: fit-content;
 }
 
-#press input {
+#press button {
     padding: 10px 120px 10px 120px;
     cursor: pointer;
     border: none;

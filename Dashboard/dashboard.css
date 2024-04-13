@@ -23,7 +23,19 @@ nav{
 #flex{
     display: flex;
     justify-content: space-between;
-}  
+} 
+
+#profile{
+    display: flex;
+    /* align-items: center; */
+}
+
+#pics img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1.6px solid white;
+}
 
 #post{
     /* padding: 0 20px 20px 20px; */
@@ -67,6 +79,11 @@ nav{
 }
 
 #blogPost img{
+    height: 150px;
+    width: 150px;
+}
+
+#fetch img{
     height: 150px;
     width: 150px;
 }

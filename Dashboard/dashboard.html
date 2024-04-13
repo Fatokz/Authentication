@@ -20,8 +20,15 @@
                     <button>Services</button>
                     <button>Contact</button>
                 </div>
-                <div>
-                    <button onclick="logOut()">Log out</button>
+                <div id="profile">
+                    <div>
+                        <button onclick="logOut()">Log out</button>
+                    </div>
+                    <div id="pics">
+                        <input onchange="fileMe(event)" id="me" hidden type="file">
+                        <button onclick="meUser()">icon</button>
+                        <img id="myImage" alt="">
+                    </div>
                 </div>
             </div>
         </nav>
@@ -57,7 +64,9 @@
                 </div>
 
                 <div id="like">
-                    <h3>Remijfjfjfjhhhjd</h3>
+                    <div id="dliked">
+
+                    </div>
                 </div>
             </div>
         </section>
