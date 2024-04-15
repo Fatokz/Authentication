@@ -23,9 +23,13 @@ console.log(details);
 let blogimage = "";
 let Mypics = "";
 
-if(details.profile){
-    myImage.src = details.profile 
+function iff() {
+    if(details.profile){
+        myImage.src = details.profile 
+    }
 }
+
+iff()
 
 
 let blogPosts = JSON.parse(localStorage.getItem('myBlog')) || []
